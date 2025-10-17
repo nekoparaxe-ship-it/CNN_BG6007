@@ -127,7 +127,7 @@ def main():
         optimizer = optim.Adam(model.parameters(), lr=0.00001, weight_decay=0.1)
 
         # 开始训练循环
-        num_epochs = 05  # 论文中训练了更多周期，这里为了演示设为10
+        num_epochs = 50  # 论文中训练了更多周期，这里为了演示设为10
         for epoch in range(num_epochs):
             model.train()
             running_loss = 0.0
